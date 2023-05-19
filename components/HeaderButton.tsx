@@ -10,7 +10,7 @@ export default function HeaderButton({
   return (
     <Link
       href={href}
-      className="border-2 py-2 px-4 text-2xl font-medium border-black rounded-full"
+      className="py-2 px-4 text-xl tracking-wide lowercase text-slate-900 bg-white rounded-full"
     >
       {text}
     </Link>
