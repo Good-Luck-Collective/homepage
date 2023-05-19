@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://good-luck-collective.github.io/homepage/",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
   generateRobotsTxt: true,
 };

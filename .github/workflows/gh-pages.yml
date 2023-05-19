@@ -9,6 +9,10 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
 
+    env:
+      NEXT_PUBLIC_BASE_PATH: "/homepage"
+      NEXT_PUBLIC_SITE_URL: "https://good-luck-collective.github.io/homepage/"
+
     steps:
       - name: Get files
         uses: actions/checkout@v3
