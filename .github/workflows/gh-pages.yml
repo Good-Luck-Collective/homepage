@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: "/homepage"
-      NEXT_PUBLIC_SITE_URL: "https://good-luck-collective.github.io/homepage/"
+      NEXT_PUBLIC_BASE_PATH: "/"
+      NEXT_PUBLIC_SITE_URL: "https://glc.tntn-page.xyz/"
 
     steps:
       - name: Get files
