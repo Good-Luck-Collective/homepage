@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "pwa-asset-generator ./public/images/clover.svg ./public/icons",
+    "prebuild": "pwa-asset-generator ./public/images/clover-icon.svg ./public/icons",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
