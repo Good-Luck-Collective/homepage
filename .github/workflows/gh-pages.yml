@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: "/"
       NEXT_PUBLIC_SITE_URL: "https://glc.tntn-page.xyz/"
 
     steps:
