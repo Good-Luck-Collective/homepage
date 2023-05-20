@@ -1,10 +1,58 @@
+import { Metadata } from "next";
 import Header from "../components/Header";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Good Luck Collective",
   description:
     "Good Luck Collective is a team of dedicated game developers focused on creating immersive and engaging gaming experiences. With a strong emphasis on stunning visuals and captivating gameplay, we are committed to pushing the boundaries of interactive entertainment. Join us on our journey as we continue to craft unique games that captivate players and provide unforgettable adventures.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    title: "Good Luck Collective",
+    capable: true,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  authors: [
+    {
+      name: "Andre Koga",
+      url: "https://www.andrekoga.com/",
+    },
+    {
+      name: "Eugene Matsumura",
+      url: "https://sushiwaumai.github.io/",
+    },
+  ],
+  creator: "Good Luck Collective",
+  keywords: ["Game development", "Immersion", "Gameplay", "Visuals", "Indie"],
+  openGraph: {
+    title: "Good Luck Collective",
+    siteName: "GoodLuckCollective",
+    type: "website",
+    description:
+      "Good Luck Collective is a team of dedicated game developers focused on creating immersive and engaging gaming experiences. With a strong emphasis on stunning visuals and captivating gameplay, we are committed to pushing the boundaries of interactive entertainment. Join us on our journey as we continue to craft unique games that captivate players and provide unforgettable adventures.",
+    url: "https://glc.tntn-page.xyz",
+    images: [
+      {
+        url: "https://glc.tntn-page.xyz/images/clover-icon.jpg",
+      },
+    ],
+  },
+  twitter: {
+    title: "Good Luck Collective",
+    card: "summary_large_image",
+    creator: "@GL_Collective",
+    description:
+      "Good Luck Collective is a team of dedicated game developers focused on creating immersive and engaging gaming experiences. With a strong emphasis on stunning visuals and captivating gameplay, we are committed to pushing the boundaries of interactive entertainment. Join us on our journey as we continue to craft unique games that captivate players and provide unforgettable adventures.",
+    images: [
+      {
+        url: "https://glc.tntn-page.xyz/images/clover-icon.jpg",
+      },
+    ],
+  },
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
@@ -14,11 +62,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="manifest" href="/manifest.json" />
-
       <link rel="apple-touch-icon" href="/icons/apple-icon-180.png" />
-
-      <meta name="apple-mobile-web-app-capable" content="yes" />
 
       <link
         rel="apple-touch-startup-image"
