@@ -3,6 +3,12 @@
   "short_name": "GLC",
   "version": "0.0.1",
   "manifest_version": 2,
+  "scope": ".",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#34D399",
+  "background_color": "#34D399",
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
@@ -16,10 +22,5 @@
       "type": "image/png",
       "purpose": "maskable any"
     }
-  ],
-  "start_url": "/",
-  "display": "standalone",
-  "orientation": "landscape",
-  "theme_color": "#34D399",
-  "background_color": "#34D399"
+  ]
 }

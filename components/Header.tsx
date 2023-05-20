@@ -16,7 +16,7 @@ export default function Header() {
       <nav className="ml-auto">
         <ul className="flex justify-between">
           <li className="hover:scale-90 transition-all">
-            <HeaderButton href="test" text="test" />
+            <HeaderButton href="/" text="test" />
           </li>
         </ul>
       </nav>
